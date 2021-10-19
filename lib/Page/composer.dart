@@ -27,7 +27,7 @@ class _TweetState extends State<Tweet> {
             padding: EdgeInsets.only(right: 20),
             child: GestureDetector(
               onTap: () {
-                userTumbles.add(new Shouttext(shout: userTweet.text));
+                userShout.add(new Shouttext(shout: userTweet.text));
                 Navigator.pushReplacement(
                     context, MaterialPageRoute(builder: (context) => MyHome()));
               },
