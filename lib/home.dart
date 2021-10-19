@@ -1,11 +1,11 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, unnecessary_new
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, unnecessary_new, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
 
-import 'Page/notifications.dart';
-import 'Page/home.dart';
-import 'Page/message.dart';
-import 'Page/search.dart';
+import 'Screens/notifications.dart';
+import 'Screens/home.dart';
+import 'Screens/message.dart';
+import 'Screens/search.dart';
 
 class MyHome extends StatefulWidget {
   @override
@@ -32,10 +32,10 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Twitter Clone"),
+        title: new Text("SHOUT OUT!"),
         leading: CircleAvatar(
           radius: 5.0,
-          backgroundImage: AssetImage('lib/assets/DP.png'),
+          backgroundImage: AssetImage('assets/DP.png'),
           child: ClipOval(
             child: new SizedBox(
               width: 10.0,
@@ -44,6 +44,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
           ),
         ),
       ),
+      //------------------------------------Profile Drawer-------------------------------------
       drawer: Drawer(
         child: Container(
           color: Theme.of(context).primaryColorDark,
@@ -52,18 +53,18 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
               new Container(
                 child: new UserAccountsDrawerHeader(
                   accountName: Text(
-                    "Profmco",
+                    "Admin",
                     style: new TextStyle(fontSize: 15.0),
                   ),
                   accountEmail: Text(
-                    "johntongco@gmail.com",
+                    "admin@gmail.com",
                     style: new TextStyle(fontSize: 15.0),
                   ),
                   currentAccountPicture: Container(
                     decoration: new BoxDecoration(
                       shape: BoxShape.circle,
                       image: new DecorationImage(
-                        image: AssetImage('lib/assets/DP.png'),
+                        image: AssetImage('assets/DP.png'),
                       ),
                     ),
                   ),
@@ -124,6 +125,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
           ),
         ),
       ),
+      //---------------------------------------Tab buttons------------------------------------
       body: new TabBarView(
         children: <Widget>[
           new Home(),

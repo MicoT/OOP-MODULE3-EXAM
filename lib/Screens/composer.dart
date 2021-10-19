@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_new
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_new, unused_field, duplicate_ignore, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 import 'package:twitter/home.dart';
@@ -31,9 +31,7 @@ class _TweetState extends State<Tweet> {
                 Navigator.pushReplacement(
                     context, MaterialPageRoute(builder: (context) => MyHome()));
               },
-              child: Icon(
-                Icons.border_color_outlined,
-              ),
+              child: Icon(Icons.campaign_outlined),
             ),
           ),
         ],
@@ -44,6 +42,7 @@ class _TweetState extends State<Tweet> {
           child: Stack(
             alignment: Alignment.center,
             children: [
+              // this comment is for background message
               // Container(
               //           height: MediaQuery.of(context).size.height,
               //           width: MediaQuery.of(context).size.width,
@@ -62,7 +61,7 @@ class _TweetState extends State<Tweet> {
                   left: 30,
                   child: CircleAvatar(
                     radius: 25.0,
-                    backgroundImage: AssetImage('lib/assets/DP.png'),
+                    backgroundImage: AssetImage('assets/DP.png'),
                   )),
               Positioned(
                   top: 10,
@@ -71,9 +70,10 @@ class _TweetState extends State<Tweet> {
                     height: 300,
                     width: 265,
                     child: TextFormField(
+                      autofocus: true,
                       maxLength: 240,
                       keyboardType: TextInputType.multiline,
-                      minLines: 1, //Normal textInputField will be displayed
+                      minLines: 1,
                       maxLines: 50,
                       controller: userTweet,
                       onChanged: (value) {

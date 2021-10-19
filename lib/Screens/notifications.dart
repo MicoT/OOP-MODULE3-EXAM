@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, unnecessary_new
+// ignore_for_file: prefer_const_constructors, unnecessary_new, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
 
@@ -37,6 +37,7 @@ class Notificationn extends StatelessWidget {
                   child: ListTile(
                     leading: CircleAvatar(
                       radius: 25.0,
+                      backgroundImage: AssetImage('assets/DP.png'),
                     ),
                     title: Text(
                       "Flutter",
@@ -48,7 +49,7 @@ class Notificationn extends StatelessWidget {
                     subtitle: Container(
                       padding: EdgeInsets.only(top: 5.0),
                       child: Text(
-                        "LUH ANO YAN PANOT?.",
+                        "You are using listbuilder? That's amazing!",
                         style: TextStyle(color: Colors.white, fontSize: 15.0),
                       ),
                     ),

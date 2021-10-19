@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_unnecessary_containers, deprecated_member_use, prefer_const_constructors, unnecessary_new
+// ignore_for_file: avoid_unnecessary_containers, deprecated_member_use, prefer_const_constructors, unnecessary_new, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
 
@@ -57,7 +57,7 @@ class Search extends StatelessWidget {
             new Container(
               child: ListTile(
                 title: Text(
-                  "#porn",
+                  "#Dart",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18.0,
@@ -73,7 +73,7 @@ class Search extends StatelessWidget {
             new Container(
               child: ListTile(
                 title: Text(
-                  "#hentai",
+                  "#Python",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18.0,
@@ -89,7 +89,7 @@ class Search extends StatelessWidget {
             new Container(
               child: ListTile(
                 title: Text(
-                  "#anime",
+                  "#Anime",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18.0,

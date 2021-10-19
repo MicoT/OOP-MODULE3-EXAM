@@ -1,7 +1,6 @@
 // ignore_for_file: unnecessary_new, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:twitter/Page/composer.dart';
 import 'create_shout.dart';
 import 'composer.dart';
 
@@ -18,10 +17,10 @@ class Home extends StatelessWidget {
               child: userShout.isEmpty
                   ? Center(
                       child: Text(
-                        "HOLY FUCKING SHIT IT'S EMPTY. \n YOU MUST BE LONELY AS FUCK!",
+                        "All quite right now... \nNothing to report.",
                         style: TextStyle(
-                          fontSize: 15,
-                          color: Color(0xffECDBBA),
+                          fontSize: 30,
+                          color: Color(0xff37474f),
                         ),
                       ),
                     )
@@ -34,10 +33,10 @@ class Home extends StatelessWidget {
                           child: ListTile(
                             leading: CircleAvatar(
                               radius: 25.0,
-                              backgroundImage: AssetImage('lib/assets/DP.png'),
+                              backgroundImage: AssetImage('assets/DP.png'),
                             ),
                             title: Text(
-                              "PORN",
+                              "Admin",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18.0,

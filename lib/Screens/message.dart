@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, unnecessary_new
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, unnecessary_new, use_key_in_widget_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
 
@@ -30,6 +30,7 @@ class Message extends StatelessWidget {
               child: ListTile(
                 leading: CircleAvatar(
                   radius: 25.0,
+                  backgroundImage: AssetImage('assets/DP.png'),
                 ),
                 title: Text(
                   "RAZER",
@@ -54,6 +55,7 @@ class Message extends StatelessWidget {
               child: ListTile(
                 leading: CircleAvatar(
                   radius: 25.0,
+                  backgroundImage: AssetImage('assets/DP.png'),
                 ),
                 title: Text(
                   "r/FlutterDev",
@@ -78,6 +80,7 @@ class Message extends StatelessWidget {
               child: ListTile(
                 leading: CircleAvatar(
                   radius: 25.0,
+                  backgroundImage: AssetImage('assets/DP.png'),
                 ),
                 title: Text(
                   "Flutter",
@@ -106,4 +109,3 @@ class Message extends StatelessWidget {
     );
   }
 }
-//mesaja tarih eklenecek....!!!!!!
