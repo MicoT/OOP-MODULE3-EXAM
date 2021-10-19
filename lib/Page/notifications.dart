@@ -58,11 +58,6 @@ class Notificationn extends StatelessWidget {
             ),
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: Icon(Icons.edit),
-          backgroundColor: Theme.of(context).accentColor,
-        ),
       ),
     );
   }

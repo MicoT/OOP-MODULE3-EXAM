@@ -122,7 +122,7 @@ class Search extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.edit),
+        child: Icon(Icons.search),
         backgroundColor: Theme.of(context).accentColor,
       ),
     );
